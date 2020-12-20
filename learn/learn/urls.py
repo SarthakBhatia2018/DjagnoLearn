@@ -20,4 +20,5 @@ from api.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('student/', student_list),
+    path('student/<int:id>/', student_list),
 ]
